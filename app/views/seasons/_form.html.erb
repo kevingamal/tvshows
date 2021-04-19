@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :show_id %>
-    <%= form.text_field :show_id %>
+    <%= collection_select(:season, :show_id, Show.all, :id, :name) %>
   </div>
 
   <div class="actions">

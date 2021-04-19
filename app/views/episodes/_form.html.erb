@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :season_id %>
-    <%= form.text_field :season_id %>
+    <%= collection_select(:episode, :season_id, Season.all, :id, :seasonlabel) %>
   </div>
 
   <div class="actions">
